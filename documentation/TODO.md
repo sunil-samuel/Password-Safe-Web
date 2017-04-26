@@ -9,3 +9,6 @@
 9. Allow tags for each category and entry.  Allow new tags to be created and be searched on
 10. On entry view, sort on title, and other fields
 11. Modal should be bigger
+12. Restrict users on an ip address
+13. Use other authentication mechanism such as ldap, active directory
+
