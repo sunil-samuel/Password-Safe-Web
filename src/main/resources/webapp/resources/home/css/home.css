@@ -1,0 +1,335 @@
+html, body {
+	height: 90%;
+}
+
+.config-roller {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.theme-roller {
+	text-align: right;
+	padding: 5px 20px 5px 0;
+}
+
+.config-area {
+	background: rgba(255, 255, 255, .4);
+	-webkit-box-shadow: 1px 8px 23px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 1px 8px 23px 0px rgba(50, 50, 50, 0.4);
+	box-shadow: 1px 8px 23px 0px rgba(50, 50, 50, 0.4);
+	border-radius: 4px;
+	text-align: right;
+}
+
+.center-all {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 15px;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 20px solid rgba(200, 200, 200, 0.4);
+	border-radius: 10px;
+	-webkit-box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+	text-align: center;
+}
+
+.button {
+	text-align: center;
+	padding: 10px;
+}
+
+.form-pair {
+	padding: 10px;
+}
+
+.key {
+	/* 	display: inline-block; */
+	width: 100%;
+	text-align: center;
+}
+
+.value {
+	display: inline-block;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]
+	{
+	width: 300px;
+	margin-bottom: 4px;
+	border-radius: 3px;
+	border-color: rgb(20, 20, 20);
+	padding-left: 5px;
+}
+
+form.login input {
+	width: 200px;
+	border: 1px solid rgb(200, 200, 200);
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 2px 4px;
+	-webkit-box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 9px 11px 17px 1px rgba(0, 0, 0, 0.3);
+	padding: 4px;
+}
+
+.main-widget {
+	height: auto;
+}
+
+.footer-widget {
+	text-align: center;
+	color: rgb(0, 0, 0, 0.5);
+}
+
+.content-widget {
+	border: 1px solid rgb(200, 200, 200);
+	border-radius: 5px;
+	margin-top: 5px;
+	min-height: 80%;
+	padding: 5px;
+	text-align: center;
+}
+
+.content-widget .title {
+	font-size: 14pt;
+	text-shadow: none;
+}
+
+.category-widget {
+	padding: 10px;
+}
+
+.entry-start {
+	border: 1px solid rgb(200, 200, 200);
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+}
+
+#to-copy-text {
+	z-index: 50000;
+	float: right;
+	right: 100px;
+	position: relative;
+}
+
+.entry-element {
+	border-right: 1px solid rgb(200, 200, 200);
+	height: 100%;
+	overflow: auto;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	width: 15%;
+}
+
+entry-view {
+	border: 1px solid rgb(200, 200, 200);
+	padding: 5px;
+}
+
+.key-value {
+	border: 2px solid rgb(200, 0, 120);;
+	margin: 5px;
+	border-radius: 3px;
+	padding: 5px;
+	text-align: center;
+}
+
+.key-value .key {
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;
+	background-color: rgb(70, 70, 70);
+	border-radius: 4px;
+}
+
+.key-value .value {
+	border-bottom: 1px solid rgb(220, 220, 220);
+	color: rgb(110, 110, 110);
+	width: 100%;
+}
+
+.last-element {
+	border-right: none !important;
+}
+
+.url-data {
+	width: 35%;
+}
+
+.notes {
+	
+}
+
+.value textarea {
+	width: 95%;
+	max-height: 100px;
+	height: 100px;
+}
+
+.left-panel {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	width: 30%;
+}
+
+.right-panel {
+	display: inline-block;
+	width: 68%;
+	text-align: left;
+	vertical-align: top;
+}
+
+.entry-header {
+	font-weight: bold;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.name-header, .name-element, .email-header, .email-element,
+	.phone-header, .phone-element {
+	width: 23%;
+}
+
+.role-header, .role-element {
+	width: 14%;
+}
+
+.action-header, .action-element {
+	width: 10%;
+}
+
+.username-header, .username-element, .password-header, .password-element
+	{
+	width: 10%;
+}
+
+.ui-dialog {
+	z-index: 10000;
+}
+
+.noselect {
+	/* iOS Safari */
+	-webkit-touch-callout: none;
+	/* Chrome/Safari/Opera */
+	-webkit-user-select: none;
+	/* Konqueror */
+	-khtml-user-select: none;
+	/* Firefox */
+	-moz-user-select: none;
+	/* Internet Explorer/Edge */
+	-ms-user-select: none;
+	/* Non-prefixed version, currently not supported by any browser */
+	user-select: none;
+}
+
+.nowrap {
+	display: inline-block;
+}
+
+.clipboard-alert {
+	-webkit-box-shadow: 0px 5px 20px 10px rgba(235, 65, 59, 1);
+	-moz-box-shadow: 0px 5px 20px 10px rgba(235, 65, 59, 1);
+	box-shadow: 0px 5px 20px 10px rgba(235, 65, 59, 1);
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	padding: 2px 5px;
+	border-radius: 4px;
+	z-index: 4;
+	display: none;
+}
+
+.form-element-pair {
+	padding: 5px 0;
+}
+
+.hide {
+	display: none;
+}
+
+.even {
+	background-color: #eeeeee;
+}
+
+.odd {
+	background-color: #ffffff;
+}
+
+.eye-icon {
+	background: rgba(0, 0, 0, 0) url("../gfx/pwd-eye.png") no-repeat scroll
+		0 0;
+	cursor: pointer;
+	height: 24px;
+	position: absolute;
+	width: 24px;
+	z-index: 1;
+}
+
+.submit-red {
+	-moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+	box-shadow: inset 0px 1px 0px 0px #f29c93;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00
+		), color-stop(1, #ce0100));
+	background: -moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background: -webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background: -o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background: -ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00',
+		endColorstr='#ce0100', GradientType=0);
+	background-color: #fe1a00;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #d83526;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #b23e35;
+}
+
+.submit-red:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100
+		), color-stop(1, #fe1a00));
+	background: -moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background: -webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background: -o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background: -ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+	background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100',
+		endColorstr='#fe1a00', GradientType=0);
+	background-color: #ce0100;
+}
+
+.submit-red:active {
+	position: relative;
+	top: 1px;
+}
+
+.clock-widget {
+	position: absolute;
+	top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.left-panel {
+		width: 100%;
+	}
+	.right-panel {
+		width: 100%;
+	}
+}
