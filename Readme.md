@@ -7,6 +7,7 @@ http://www.sunilsamuel.com
 
 **<h1 align='center'>Password Safe Web</h1>**
 
+<img src="../documentation/gfx/login.png">
 NOTE:  Download executable JARs from the build directory,see Bootstrapping section.
 
 <!-- BEGIN HEADERS (copy into root page) -->
