@@ -122,7 +122,7 @@ form.login input {
 .entry-element {
 	border-right: 1px solid rgb(200, 200, 200);
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 	text-overflow: ellipsis;
 	vertical-align: top;
 	width: 15%;
