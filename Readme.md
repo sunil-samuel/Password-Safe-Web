@@ -19,4 +19,6 @@ NOTE:  Download executable JARs from the build directory,see Bootstrapping secti
 	* <sub>[Quick Start](/documentation/02.%20Usage.md#quick-start)</sub>
 	* <sub>[Command Line Parameters](/documentation/02.%20Usage.md#command-line-parameters)</sub>
 	* <sub>[Passwords](/documentation/02.%20Usage.md#passwords)</sub>
+* [Web Interface](/documentation/03.%20Web%20Interface.md#web-interface)
+	* <sub>[Authentication](/documentation/03.%20Web%20Interface.md#authentication)</sub>
 <!-- END HEADERS (copy into root page) -->

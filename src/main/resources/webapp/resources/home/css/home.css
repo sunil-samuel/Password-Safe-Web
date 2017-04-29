@@ -268,9 +268,11 @@ entry-view {
 		0 0;
 	cursor: pointer;
 	height: 24px;
-	position: absolute;
+	position: relative;
+	float: right;
 	width: 24px;
 	z-index: 1;
+	width: 24px;
 }
 
 .submit-red {
