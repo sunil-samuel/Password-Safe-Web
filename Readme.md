@@ -21,4 +21,6 @@ NOTE:  Download executable JARs from the build directory,see Bootstrapping secti
 	* <sub>[Passwords](/documentation/02.%20Usage.md#passwords)</sub>
 * [Web Interface](/documentation/03.%20Web%20Interface.md#web-interface)
 	* <sub>[Authentication](/documentation/03.%20Web%20Interface.md#authentication)</sub>
+	* <sub>[Home Page (Admin)](/documentation/03.%20Web%20Interface.md#home-page-(admin))</sub>
+	* <sub>[Category (Group)](/documentation/03.%20Web%20Interface.md#category-(group))</sub>
 <!-- END HEADERS (copy into root page) -->
