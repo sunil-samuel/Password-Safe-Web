@@ -10,17 +10,32 @@
 			<c:if test="${not empty parent}">
 				<div class='parent-title'>Parent: ${parent.title}</div>
 			</c:if>
-			<div class='form-element-pair'>
-				<label for="title"><s:message code="title" /></label>
-				<form:input path="title" />
+			<!-- Title -->
+			<div class='key-value glow-shadow even'>
+				<div class='key'>
+					<label for="title"><s:message code="title" /></label>
+				</div>
+				<div class='value'>
+					<form:input path="title" />
+				</div>
 			</div>
-			<div class='form-element-pair'>
-				<label for="description"><s:message code="desc" /></label>
-				<form:input path="description" />
+			<!-- Description -->
+			<div class='key-value glow-shadow even'>
+				<div class='key'>
+					<label for="description"><s:message code="desc" /></label>
+				</div>
+				<div class='value'>
+					<form:input path="description" />
+				</div>
 			</div>
-			<div class='form-element-pair'>
-				<label for="notes"><s:message code="notes" /></label>
-				<form:textarea path="notes" cssClass="notes" />
+			<!-- notes -->
+			<div class='key-value glow-shadow even notes'>
+				<div class='key'>
+					<label for="notes"><s:message code="notes" /></label>
+				</div>
+				<div class='value'>
+					<form:textarea path="notes" cssClass="notes" />
+				</div>
 			</div>
 		</fieldset>
 	</form:form>
