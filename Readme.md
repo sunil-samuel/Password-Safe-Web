@@ -7,10 +7,9 @@ http://www.sunilsamuel.com
 
 **<h1 align='center'>Password Safe Web</h1>**
 
-<p align='center'><img src="/documentation/gfx/login.png"></p>
-
 The Password Safe Web is a safe and secure web-based password manager that runs within the confinements of your firewall within your residence or work.
 
+<p align='center'><img src="/documentation/gfx/login.png"></p>
 
 NOTE:  Download executable JARs from the build directory,see Bootstrapping section.
 
