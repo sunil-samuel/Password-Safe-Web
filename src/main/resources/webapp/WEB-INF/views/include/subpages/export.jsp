@@ -17,12 +17,12 @@
 		<input type="radio" name="file-format" value="safe">Password
 		Safe<br>
 	</p>
-	<p>Enter a password?</p>
+	<p>Enter a password for the file (requires password to open this file)?</p>
 	<p>
 		<input type='password' name='password' class='export-password'>
 	</p>
 	<p>
-	<p>Re-Enter the password?</p>
+	<p>Re-Enter the password for the file?</p>
 	<p>
 		<input type='password' name='repassword' class='export-password'>
 	</p>
