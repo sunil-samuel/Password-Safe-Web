@@ -905,12 +905,12 @@ var home = {
 						function(data, textStatus, jqXHR) {
 							home.createDialog(data, textStatus);
 							/*
-							 * Now update the list of entries for category
+							 * Now update the list of entries for category. If
+							 * it was a search, then rerun the search otherwise,
+							 * show the category
 							 */
-							// TODO - We need to check if this is a search. If
-							// it is, then
-							// re-run the search instead of the following.
-							if (home.isEmpty(search)) {
+							if (home.isEmpty(search)
+									|| typeof search != 'string') {
 								home
 										.getEntriesAndFoldersForCategory($(".category-select.opened"));
 							} else {
