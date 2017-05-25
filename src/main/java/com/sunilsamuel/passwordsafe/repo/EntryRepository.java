@@ -29,4 +29,8 @@ public interface EntryRepository extends JpaRepository<Entry, Long> {
 
 	Long countByParentCategoryId(Long parentId);
 
+	// findByPlaceIgnoreCaseContaining
+	List<Entry> findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContainingOrNotesIgnoreCaseContainingOrderByTitleAsc(
+			String title, String description, String notes);
+
 }

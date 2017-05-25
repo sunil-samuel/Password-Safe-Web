@@ -123,6 +123,17 @@ public class EntryController {
 		return "include/subpages/all-entry";
 	}
 
+	@RequestMapping(method = RequestMethod.GET, value = "search-entries")
+	public String searchEntries(@RequestParam(name = "search") String search, Model model) {
+		// search = "%" + search + "%";
+		List<Entry> entries = entryRepo
+				.findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContainingOrNotesIgnoreCaseContainingOrderByTitleAsc(
+						search, search, search);
+		model.addAttribute("entries", entries);
+		model.addAttribute("search", search);
+		return "include/subpages/all-entry";
+	}
+
 	@RequestMapping(method = RequestMethod.POST, value = "remove-entry")
 	public String removeEntryById(@RequestParam(name = "id") Long id, Model model) {
 		Entry entry = entryRepo.findOne(id);

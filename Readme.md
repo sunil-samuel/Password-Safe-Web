@@ -26,4 +26,9 @@ NOTE:  Download executable JARs from the build directory,see Bootstrapping secti
 	* <sub>[Authentication](/documentation/03.%20Web%20Interface.md#authentication)</sub>
 	* <sub>[Home Page (Admin)](/documentation/03.%20Web%20Interface.md#home-page-admin)</sub>
 	* <sub>[Category (Group)](/documentation/03.%20Web%20Interface.md#category-group)</sub>
+	* <sub>[Entry](/documentation/03.%20Web%20Interface.md#entry)</sub>
+		* <sub>[Edit Entry](/documentation/03.%20Web%20Interface.md#edit-entry)</sub>
+		* <sub>[View Entry](/documentation/03.%20Web%20Interface.md#view-entry)</sub>
+		* <sub>[Clipboard (double-click)](/documentation/03.%20Web%20Interface.md#clipboard-double-click)</sub>
+	* <sub>[Search](/documentation/03.%20Web%20Interface.md#search)</sub>
 <!-- END HEADERS (copy into root page) -->

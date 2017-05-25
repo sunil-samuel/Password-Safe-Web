@@ -236,11 +236,19 @@ var home = {
 		home.newUserOnClick();
 		home.listUserOnClick();
 
+		home.searchOnClick();
+
 		// $('.ignore-url').off('click').on('click', function(e) {
 		// return false;
 		// });
 	},
 
+	searchOnClick : function() {
+		$(".search-submit").off('click').on('click', function(e) {
+			home.processSearchOnClick();
+			return false;
+		});
+	},
 	myAccountOnClick : function() {
 		$(".my-account-link").off('click').on('click', function(e) {
 			home.processMyAccountOnClick();
@@ -302,7 +310,7 @@ var home = {
 				home.createDialog(jsvar.missingEntry, jsvar.headerEntryEdit);
 				return false;
 			}
-			home.processEditEntry(selected[0]);
+			home.processEditEntry(selected);
 			return false;
 		});
 	},
@@ -557,6 +565,18 @@ var home = {
 		});
 	},
 
+	processSearchOnClick : function() {
+		var searchTerms = $(".search-input").val();
+		var jqxhr = $.get(home.resource + "secure/entry/search-entries?search="
+				+ searchTerms);
+		jqxhr.done(function(data, textStatus, jqXhr) {
+			$('.entry-widget').html(data);
+			$('.entry-start:even').addClass('even');
+			$('.entry-start:odd').addClass('odd');
+		}).fail(function(jqXhr, textStatus, errorThrown) {
+			home.createDialog(jqXhr.responseText, jqXhr.status);
+		});
+	},
 	processMyAccountOnClick : function() {
 		var jqxDialog = new JQXhrDialog(home.resource
 				+ "secure/admin/my-account").addButton("Update",
@@ -607,10 +627,15 @@ var home = {
 				+ "]", myFunc);
 	},
 
-	processEditEntry : function(id) {
+	processEditEntry : function(selected) {
+		var id = selected[0];
+		var search = selected[2];
+		var funcToCall = function() {
+			home.createEntry(search, this);
+		}
 		var jqDialog = new JQXhrDialog(home.resource
 				+ "secure/entry/get-entry-for-edit?id=" + id).addButton(
-				jsvar.headerEntryUpdate, home.createEntry).setFailedMessage(
+				jsvar.headerEntryUpdate, funcToCall).setFailedMessage(
 				jsvar.failedEntryEdit, jsvar.headerEntryEdit).process();
 	},
 
@@ -824,11 +849,12 @@ var home = {
 		var selectedElement = $(element);
 		var parentId, parentTitle;
 		if (selectedElement && selectedElement.length) {
-			return [ selectedElement.data("id"), selectedElement.data("title") ];
+			return [ selectedElement.data("id"), selectedElement.data("title"),
+					selectedElement.data("search") ];
 		}
 	},
 
-	createEntry : function() {
+	createEntry : function(search, dialogElement) {
 		var url = home.resource + "secure/entry/new-entry";
 		var element = $(".create-entry");
 
@@ -868,18 +894,38 @@ var home = {
 			vars["parentCategoryId"] = parentCatId;
 			vars["id"] = id;
 		}
-		$(this).dialog("close");
+		if (home.isEmpty(dialogElement)) {
+			$(this).dialog("close");
+		} else {
+			$(dialogElement).dialog("close");
+		}
 		var jqxhr = $.post(url, vars);
-		jqxhr.done(function(data, textStatus, jqXHR) {
-			home.createDialog(data, textStatus);
-			/*
-			 * Now update the list of entries for category
-			 */
-			home.getEntriesAndFoldersForCategory($(".category-select.opened"));
-		}).fail(function(jqXHR, textStatus, errorThrown) {
-			home.createDialog(jsvar.failedEntryCreate);
-			return false;
-		});
+		jqxhr
+				.done(
+						function(data, textStatus, jqXHR) {
+							home.createDialog(data, textStatus);
+							/*
+							 * Now update the list of entries for category
+							 */
+							// TODO - We need to check if this is a search. If
+							// it is, then
+							// re-run the search instead of the following.
+							if (home.isEmpty(search)) {
+								home
+										.getEntriesAndFoldersForCategory($(".category-select.opened"));
+							} else {
+								/**
+								 * make sure that the search box has the search
+								 * that create this hitlist and then make it
+								 * search.
+								 */
+								$('.search-input').val(search);
+								$('.search-submit').click();
+							}
+						}).fail(function(jqXHR, textStatus, errorThrown) {
+					home.createDialog(jsvar.failedEntryCreate);
+					return false;
+				});
 		return false;
 	},
 	processNewUserPost : function(vars, element) {

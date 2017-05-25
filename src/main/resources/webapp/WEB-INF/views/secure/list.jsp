@@ -1,7 +1,7 @@
 <%@include file="/WEB-INF/views/include/directive/page.jsp"%>
 <div class="menu-widget">
 	<div class='menu'>
-		<ul id="main-menu" class="sm sm-simple">
+		<ul id="main-menu" class="sm sm-simple nowrap">
 			<li><a class='ignore-url' href=""><s:message code="file" /></a>
 				<ul>
 					<c:if
@@ -63,6 +63,10 @@
 					</c:if>
 				</ul></li>
 		</ul>
+		<div class="nowrap search-widget">
+			<input name="search" class="search-input"><span
+				class="ui-icon ui-icon-search search-submit"></span>
+		</div>
 	</div>
 </div>
 <div class="content-widget">

@@ -234,6 +234,25 @@ entry-view {
 	display: inline-block;
 }
 
+.sub-arrow {
+	width: 12px;
+}
+
+.search-input {
+	border-radius: 3px;
+	margin-top: 10px;
+}
+
+.search-widget {
+	float: right;
+}
+
+.search-submit {
+	border: 1px solid rgb(200, 200, 200);
+	margin-left: 4px;
+	cursor: pointer;
+}
+
 .clipboard-alert {
 	-webkit-box-shadow: 0px 5px 20px 10px rgba(235, 65, 59, 1);
 	-moz-box-shadow: 0px 5px 20px 10px rgba(235, 65, 59, 1);

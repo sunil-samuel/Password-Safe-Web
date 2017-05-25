@@ -22,7 +22,7 @@
 			</div>
 			<c:forEach items="${entries}" var="entry">
 				<div class='entry-start category-${entry.id}' data-id="${entry.id}"
-					data-title="${entry.title}">
+					data-search="${search}" data-title="${entry.title}">
 					<div class='nowrap action-element entry-element center'>
 						<a href='/invalid' class='view-entry' data-id="${entry.id}"
 							title='View ${entry.title}'><span
