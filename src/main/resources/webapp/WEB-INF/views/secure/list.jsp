@@ -64,8 +64,12 @@
 				</ul></li>
 		</ul>
 		<div class="nowrap search-widget">
-			<input name="search" class="search-input"><span
-				class="ui-icon ui-icon-search search-submit"></span>
+			<form>
+				<input name="search" class="search-input">
+				<button type="submit">
+					<span class="ui-icon ui-icon-search search-submit"></span>
+				</button>
+			</form>
 		</div>
 	</div>
 </div>

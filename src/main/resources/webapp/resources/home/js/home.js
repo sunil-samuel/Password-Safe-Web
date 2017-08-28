@@ -520,6 +520,10 @@ var home = {
 				'input propertychange', function() {
 					$(".password-eye-text").val($(this).val());
 				});
+		$(".password-eye-text").unbind('input propertychange').bind(
+				'input propertychange', function() {
+					$(".password-eye").val($(this).val());
+				});
 		forceEyeOpen = false;
 		$(".eye-icon").on('mouseover', function() {
 			if (!forceEyeOpen) {
