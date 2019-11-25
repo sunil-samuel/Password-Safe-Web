@@ -17,7 +17,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<springframework.version>4.3.4.RELEASE</springframework.version>
 		<springsecurity.version>4.2.0.RELEASE</springsecurity.version>
-		<spring.data>1.10.5.RELEASE</spring.data>
+		<spring.data>1.11.23.RELEASE</spring.data>
 		<spring.data.core>1.4.1.RELEASE</spring.data.core>
 		<slf4j.version>1.7.21</slf4j.version>
 		<logback.version>1.1.2</logback.version>
