@@ -21,7 +21,6 @@ package com.sunilsamuel.passwordsafe.controller;
 import java.util.List;
 import java.util.Locale;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
