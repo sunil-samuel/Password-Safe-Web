@@ -32,7 +32,7 @@
 		<maven.build.timestamp.format>yyyy-MM-dd hh-mm-ss a (z)</maven.build.timestamp.format>
 
 		<jetty.plugin.version>9.1.6.v20160112</jetty.plugin.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 
 	<dependencies>
