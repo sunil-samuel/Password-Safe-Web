@@ -20,7 +20,7 @@
 		<spring.data>1.11.23.RELEASE</spring.data>
 		<spring.data.core>1.4.1.RELEASE</spring.data.core>
 		<slf4j.version>1.7.21</slf4j.version>
-		<logback.version>1.1.2</logback.version>
+		<logback.version>1.2.0</logback.version>
 		<codahale.metrics.version>3.0.1</codahale.metrics.version>
 		<jetty.version>9.1.6.v20160112</jetty.version>
 		<jetty.jsp.version>9.1.6.v20160112</jetty.jsp.version>
