@@ -15,7 +15,7 @@
 		<main.class>com.sunilsamuel.passwordsafe.config.jetty.JettyInitialize</main.class>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<springframework.version>5.2.21.RELEASE</springframework.version>
+		<springframework.version>6.0.0</springframework.version>
 		<springsecurity.version>5.5.7</springsecurity.version>
 		<spring.data>1.11.23.RELEASE</spring.data>
 		<spring.data.core>1.4.1.RELEASE</spring.data.core>
